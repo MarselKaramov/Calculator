@@ -1,0 +1,60 @@
+.calc {
+    height: 600px;
+    width: 400px;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #2b2b2b;
+    margin: 50px auto;
+    color: aliceblue;
+    font-family: Arial;
+    padding: 30px;
+}
+
+.calcDisp {
+    height: 140px;
+    padding: 15px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    font-size: 4rem;
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 10px;
+    justify-items: center;
+    grid-template-areas: "ac plus-minus procent division" "num7 num8 num9 increase" "num4 num5 num5 minus" "num1 num2 num3 plus" "zero zero point finish";
+}
+
+.btn {
+    width: 80px;
+    height: 80px;
+    background: #333;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 80px;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.btn.zero {
+    width: 100%;
+    grid-area: zero;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    filter: brightness(130%);
+}
+
+.btn:active {
+    filter: brightness(90%);
+}
+
+.btn.gray {
+    background: #a6a6a6;
+}
+
+.btn.orange {
+    background: #ff9501;
+}
